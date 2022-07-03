@@ -1,540 +1,555 @@
 
-/* lo unica clase caracteristica de cada page es body_"page" y main_"page"; luego uso herencia*/
-
-*, *:before, *:after {
+		/* lo unica clase caracteristica de cada page es body_"page" y main_"page"; luego uso herencia*/
+
+		*, *:before, *:after {
+
+		  box-sizing: inherit;
+		}
+
+		body{
+		/*	min-height: 150vh;*/
+			font-family: 'Raleway', sans-serif;
+			margin: 0px;
+			width: 100%;
+			height: 100%;
+
+		}
+
+
+		h1{
+			font-size: 30px;
+		
+		  
+		}
+
+		header{
+			margin-top: 10px;
+			border-radius: 10px;
+		/*	height: 70px;*/
+			width: 100%;
+			background: #EDE1DB;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+		}
+
+
+		header ul{
+			width: 100%;
+			height: 70px;
+			list-style: none;
+			display: flex;
+			/*justify-content: space-around;*/
+			align-items: center;
+			margin: 0px;
+
+			
+		}
+		 .menu a{
+		 	color: black;
+		 	text-decoration: none;
+		 	margin: 0;
+		 	padding: 0;
 
-  box-sizing: inherit;
-}
-
-body{
-/*	min-height: 150vh;*/
-	font-family: 'Raleway', sans-serif;
-	margin: 0px;
-	width: 100%;
-	height: 100%;
-
-}
-
-
-h1{
-	font-size: 30px;
-
-}
-
-
-
-header{
-	margin-top: 10px;
-	border-radius: 10px;
-/*	height: 70px;*/
-	width: 100%;
-	background: #EDE1DB;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
-}
+		 }
 
+		li.menu{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex: 4;
+			
+		}
 
-header ul{
-	width: 100%;
-	height: 70px;
-	list-style: none;
-	display: flex;
-	/*justify-content: space-around;*/
-	align-items: center;
-	margin: 0px;
+		li.social{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex: 1
 
-	
-}
- .menu a{
- 	color: black;
- 	text-decoration: none;
- 	margin: 0;
- 	padding: 0;
+		}
 
- }
+		.logo{
+			width: 22px;
+			margin-bottom: 0px;
+			
+		}
 
-li.menu{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex: 4;
-	
-}
+		.iglogo{
+			width: 55px;
+			border-radius: 30px;
+		}
 
-li.social{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex: 1
 
-}
 
-.logo{
-	width: 22px;
-	margin-bottom: 0px;
-	
-}
+		footer{
+			width: 100%;
+		/*	height: 300px;*/
+			background: #EDE1DB;
+			display: flex;
+			justify-content: center;
+			margin: 0px;
 
-.iglogo{
-	width: 55px;
-	border-radius: 30px;
-}
 
+		}
 
+		footer div{
+			width: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 
-footer{
-	width: 100%;
-/*	height: 300px;*/
-	background: #EDE1DB;
-	display: flex;
-	justify-content: center;
-	margin: 0px;
+		.column{
+			width: 50%;
+			height: 200px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
 
+		.title{
+			font-family: 'Raleway', sans-serif;
+			display: flex;
+			flex: 2;
 
-}
+		}
 
-footer div{
-	width: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+		.info{
+			font-family: 'Raleway', sans-serif;
+			display: flex;
+			flex: 1;
+		}
 
-.column{
-	width: 50%;
-	height: 200px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
 
-.title{
-	font-family: 'Raleway', sans-serif;
-	display: flex;
-	flex: 2;
 
-}
+		/***HOME***/
 
-.info{
-	font-family: 'Raleway', sans-serif;
-	display: flex;
-	flex: 1;
-}
+		@media screen and (min-width: 320px) {
 
+		.ul{
+			display: none;
+		}
 
 
-/***HOME***/
+		}
 
-@media screen and (min-width: 320px) {
+		.HomeSection{
+			min-height: 800px; /*-->¿por que se rompe cuando achico el height*/
+			display: flex;
+			justify-content: center;
+			text-align: center;
 
-.ul{
-	display: none;
-}
+		}
 
+		/*GRID AREAS*/
 
-}
+		header{
+			grid-area: header;
 
-.HomeSection{
-	min-height: 800px; /*-->¿por que se rompe cuando achico el height*/
-	display: flex;
-	justify-content: center;
-	text-align: center;
+		}
 
-}
+		section{
+			grid-area: section;
 
-/*GRID AREAS*/
+		}
 
-header{
-	grid-area: header;
+		footer{
+			grid-area: footer;
 
-}
+		}
 
-section{
-	grid-area: section;
+		#main{
+			/*border: solid 2px black;*/
+			display: grid;
+			grid-template-columns: auto;
+			grid-template-rows: 10% auto 30%;
+			grid-template-areas: "header" "section" "footer";
 
-}
+		}
 
-footer{
-	grid-area: footer;
 
-}
 
-#main{
-	/*border: solid 2px black;*/
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: 10% auto 30%;
-	grid-template-areas: "header" "section" "footer";
 
-}
+		/*tienda*/
 
+		/*GRID AREAS*/
 
 
+		.title{
+			grid-area: title;
+			/*border: solid 1px black;*/
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 
-/*tienda*/
+		}
 
-/*GRID AREAS*/
+		aside{
+			grid-area: aside;
+			/*border: solid 1px black;*/
+			display: flex;
+			flex-direction: column;
+			justify-content: start;
+			align-items: center;
 
+		}
 
-.title{
-	grid-area: title;
-	/*border: solid 1px black;*/
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+		.products{
+			grid-area: products;
 
-}
+		}
 
-aside{
-	grid-area: aside;
-	/*border: solid 1px black;*/
-	display: flex;
-	flex-direction: column;
-	justify-content: start;
-	align-items: center;
+		.list{
+			/*border: solid 1px black;*/
+			margin-left: 20px;
+			text-decoration: none;
+			list-style: none;
+			padding: 20px;
 
-}
+		}
 
-.products{
-	grid-area: products;
+		aside ul li{
+			padding: 3px;
 
-}
+		}
 
-.list{
-	/*border: solid 1px black;*/
-	margin-left: 20px;
-	text-decoration: none;
-	list-style: none;
-	padding: 20px;
+		a {
+			text-decoration: none;
 
-}
+		}
 
-aside ul li{
-	padding: 3px;
+		h3{
+		text-align: center;
+		margin-bottom: 0px;
 
-}
+		}
 
-a {
-	text-decoration: none;
 
-}
+		.TiendaSection,
+		.products{
+			display: grid;
+			grid-gap: 10px;
 
-h3{
-text-align: center;
-margin-bottom: 0px;
+		}
 
-}
+		@media screen and (min-width: 320px) {
 
+			.TiendaSection{
+			min-height: 1500px; /*-->¿por que se rompe cuando achico el height*/
+			
+			grid-template-columns: auto ;
+			grid-template-rows:10% auto ;
+			
+		  row-gap: 10px;
+		  grid-template-areas: "title" "products" ;
+		}
 
-.TiendaSection,
-.products{
-	display: grid;
-	grid-gap: 10px;
+		.products{
+			/*border: solid 2px black;*/
+			
+			grid-template-columns: auto auto  ;
+			grid-template-rows: auto  ;
+			
+		}
 
-}
+		aside{
+			display: none;
+		}
 
-@media screen and (min-width: 320px) {
+		.ul{
+			display: none;
 
-	.TiendaSection{
-	min-height: 1500px; /*-->¿por que se rompe cuando achico el height*/
-	
-	grid-template-columns: auto ;
-	grid-template-rows:10% auto ;
-	
-  row-gap: 10px;
-  grid-template-areas: "title" "products" ;
-}
+		}
 
-.products{
-	/*border: solid 2px black;*/
-	
-	grid-template-columns: auto auto  ;
-	grid-template-rows: auto  ;
-	
-}
+		ul li #logo{
+			display: block;
 
-aside{
-	display: none;
-}
+		}
 
-.ul{
-	display: none;
+		.menu{
+			display: none;
 
-}
+		}
+		}
 
-ul li #logo{
-	display: block;
 
-}
 
-.menu{
-	display: none;
+		@media screen and (min-width: 1200px) {
 
-}
-}
+		.TiendaSection{
+			min-height: 1500px; /*-->¿por que se rompe cuando achico el height*/
+			
+			grid-template-columns: 15% auto;
+			grid-template-rows:10% auto ;
+			
+		  row-gap: 10px;
+		  grid-template-areas: "title title" "aside products" ;
+		}
 
+		.products{
+		/*	border: solid 2px black;*/
+			
+			grid-template-columns: auto auto auto;
+			grid-template-rows: auto auto auto;
+			
 
+		}
+		aside{
+			display: block;
+		}
 
-@media screen and (min-width: 1200px) {
+		.ul{
+			display: flex;
 
-.TiendaSection{
-	min-height: 1500px; /*-->¿por que se rompe cuando achico el height*/
-	
-	grid-template-columns: 15% auto;
-	grid-template-rows:10% auto ;
-	
-  row-gap: 10px;
-  grid-template-areas: "title title" "aside products" ;
-}
+		}
 
-.products{
-/*	border: solid 2px black;*/
-	
-	grid-template-columns: auto auto auto;
-	grid-template-rows: auto auto auto;
-	
 
-}
-aside{
-	display: block;
-}
 
-.ul{
-	display: flex;
+		}
 
-}
+		.product{
+			border: solid 1px black;
+			border-radius: 10px;
+			text-align: center;
+		}
 
+		.images{
+			width: 250px;
+			height: ;
+		}
 
 
-}
 
-.product{
-	border: solid 1px black;
-	border-radius: 10px;
-	text-align: center;
-}
 
-.images{
-	width: 250px;
-	height: ;
-}
+		/*contacto*/
 
+		/*.main_nosotras{
+			width: 100%;
+			height: 100vh;
+			background: url(../media/nosotras.jpg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
+		}*/
 
+		.body_contacto{ 
+			width: 100%;
+		  background-image: url(../media/contactoa.jpg); 
+		  background-size: cover;
+		  background-repeat: no-repeat;
+		  background-size: 100%;
+		  margin: 0px;
 
-/*contacto*/
+		}
 
-/*.main_nosotras{
-	width: 100%;
-	height: 100vh;
-	background: url(../media/nosotras.jpg);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+		.main_contacto{
+			width: 100%;
+			height: 120vh;
+			display: flex;
+			justify-content: center;
 
-}*/
+		}
 
-.body_contacto{ 
-	width: 100%;
-  background-image: url(../media/contactoa.jpg); 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin: 0px;
+		.main_contacto .section{
+			width: 60%;
+			height: ;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
-}
+		}
 
-.main_contacto{
-	width: 100%;
-	height: 120vh;
-	display: flex;
-	justify-content: center;
+		.form{
 
-}
+		width: 450px;
+		margin: auto;
+		background: rgba(0, 0, 0, 0.2);
+		padding: 10px 20px;
+		box-sizing: border-box;
+		/*margin-top:50px ;*/
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
 
-.main_contacto .section{
-	width: 60%;
-	height: ;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+		}
 
-}
+		.form .h2{
 
-.form{
+			color: white;
+			text-align: center;
+			font-size: 30px;
+			margin-bottom: 20px;
+		}
 
-width: 450px;
-margin: auto;
-background: rgba(0, 0, 0, 0.2);
-padding: 10px 20px;
-box-sizing: border-box;
-/*margin-top:50px ;*/
-border-radius: 10px;
-display: flex;
-flex-direction: column;
+		.input, .textarea{ /*In one element, you can put CLASS and ID together, and call them in two diferent way*/
 
-}
+			width: 100%;
+			margin-bottom: 20px;
+			padding: 7px;
+			box-sizing: border-box;
+			font-size: 17px;
+			color: white;
 
-.form .h2{
+		}
 
-	color: white;
-	text-align: center;
-	font-size: 30px;
-	margin-bottom: 20px;
-}
+		.label{
+			color: white;
+		}
 
-.input, .textarea{ /*In one element, you can put CLASS and ID together, and call them in two diferent way*/
+		.textarea{
 
-	width: 100%;
-	margin-bottom: 20px;
-	padding: 7px;
-	box-sizing: border-box;
-	font-size: 17px;
-	color: white;
+			min-height: 100px;
+			max-height: 200px;
+			max-width: 100%;
 
-}
+		}
 
-.label{
-	color: white;
-}
+		#btn_form{
 
-.textarea{
+			background: white;
+			color: black;
+			border-radius: 7px;
+			border: white;
 
-	min-height: 100px;
-	max-height: 200px;
-	max-width: 100%;
 
-}
+		}
 
-#btn_form{
+		#btn_form:hover{
 
-	background: white;
-	color: black;
-	border-radius: 7px;
-	border: white;
+			cursor: pointer;
+			background:  #fce4ec;
+			color: black;
+			border: solid 1px black;
 
+		}
 
-}
 
-#btn_form:hover{
+		/*nosotras*/
 
-	cursor: pointer;
-	background:  #fce4ec;
-	color: black;
-	border: solid 1px black;
+		.body_nosotras{
+			background: #EDE1DB;
+			margin: 0px;
 
-}
+		}
 
+		.main_nosotras{
+			width: 100%;
+			height: 150vh;
+			background: url(../media/nosotras.jpg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
-/*nosotras*/
+		}
 
-.body_nosotras{
-	background: #EDE1DB;
-	margin: 0px;
+		.text{
+			width: 30%;
+			height: 40%;
+			text-align: center;
+			background: #EDE1DB;
+			opacity: 0.8;
+			border-radius: 10px;
+		}
 
-}
 
-.main_nosotras{
-	width: 100%;
-	height: 150vh;
-	background: url(../media/nosotras.jpg);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 
-}
+		/*main nosotras1*/
 
-.text{
-	width: 30%;
-	height: 40%;
-	text-align: center;
-	background: #EDE1DB;
-	opacity: 0.8;
-	border-radius: 10px;
-}
+		/*.main_nosotras{
+			width: 100%;
+			min-height: 500px;
+			display: flex;
+			justify-content: center;
 
+		}
 
+		.main_nosotras .div_nosotras{
+			width: 50%;
+			background: #B7A396;
+			border-radius: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
-/*main nosotras1*/
+		}
 
-/*.main_nosotras{
-	width: 100%;
-	min-height: 500px;
-	display: flex;
-	justify-content: center;
+		.div_nosotras .text{
+			height: 80%;
+			display: flex;
+			flex-direction:column;
+			justify-content: flex-start;
+			align-items: center;
 
-}
+		}
 
-.main_nosotras .div_nosotras{
-	width: 50%;
-	background: #B7A396;
-	border-radius: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+		.title_historia{
+			font-size: 35px;
+			display: flex;
+			flex: 1;
 
-}
+		}
 
-.div_nosotras .text{
-	height: 80%;
-	display: flex;
-	flex-direction:column;
-	justify-content: flex-start;
-	align-items: center;
+		.text_historia{
+			width: 70%;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			flex: 4;
 
-}
+		}
 
-.title_historia{
-	font-size: 35px;
-	display: flex;
-	flex: 1;
+		.img_nosotras{
+			width: 700px;
+		}*/
 
-}
 
-.text_historia{
-	width: 70%;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	flex: 4;
 
-}
 
-.img_nosotras{
-	width: 700px;
-}*/
 
 
+		/*suscripciones*/
 
+		.main_suscripciones{
+			min-height: 100vh;
 
+		}
 
+		/*eventos*/
 
-/*suscripciones*/
+		.main_eventos{
+			min-height: 100vh;
 
-.main_suscripciones{
-	min-height: 100vh;
+		}
 
-}
+		/*animaciones, transicion o transformacion*/ 
 
-/*eventos*/
+				h1, h2, #logo{
+			font-size: 30px;
+		  animation-duration: 2s;
+		  animation-name: aparecer;
+		  animation-iteration-count: 1;
+		  
+		}
 
-.main_eventos{
-	min-height: 100vh;
-
-}
-
-/*animaciones, transicion o transformacion*/ 
-
+		@keyframes aparecer {
+	            0% {
+	                opacity: 0;
+	            }
+	            100% {
+	                opacity: 1;
+	            }
+	        }	
 
 
 
