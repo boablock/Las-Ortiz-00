@@ -17,8 +17,7 @@
 
 
 		h1{
-			font-size: 30px;
-		
+			font-size: 50px;
 		  
 		}
 
@@ -534,14 +533,19 @@
 
 		/*animaciones, transicion o transformacion*/ 
 
-				h1, h2, #logo{
+		h1, h2, #logo{
 			font-size: 30px;
-		  animation-duration: 2s;
-		  animation-name: aparecer;
-		  animation-iteration-count: 1;
+		 	animation-duration: 2s;
+		 	animation-name: aparecer;
+		 	animation-iteration-count: 1;
+		  
 		  
 		}
 
+		h1{
+			font-size: 40px;
+		
+		}
 		@keyframes aparecer {
 	            0% {
 	                opacity: 0;
