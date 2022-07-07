@@ -21,39 +21,40 @@
 		  
 		}
 
-		header{
-			margin-top: 10px;
-			border-radius: 10px;
-		/*	height: 70px;*/
-			width: 100%;
+
+		.navbar-nav{
 			background: #EDE1DB;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			
-		}
-
-
-		header ul{
+			height: 100px;
 			width: 100%;
-			height: 70px;
-			list-style: none;
 			display: flex;
-			/*justify-content: space-around;*/
+			justify-content: space-around;
 			align-items: center;
-			margin: 0px;
+		}
+
+		#logoLO{
+			border-radius: 40px !important; 
+			width: 50px;
+
+		}
+
+		#navbar{
+			background: #EDE1DB;
+		}
+
+		/*.navbar-nav{
+			width: 100%;
+			height: 100%;
+			background: #EDE1DB
+		}*/
+
+		
+		
 
 			
-		}
-		 .menu a{
-		 	color: black;
-		 	text-decoration: none;
-		 	margin: 0;
-		 	padding: 0;
+		
+	
 
-		 }
-
-		li.menu{
+	/*	li.menu{
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -78,7 +79,7 @@
 		.iglogo{
 			width: 55px;
 			border-radius: 30px;
-		}
+		}*/
 
 
 
@@ -126,22 +127,66 @@
 
 		/***HOME***/
 
-		@media screen and (min-width: 320px) {
-
-		.ul{
-			display: none;
-		}
-
-
-		}
-
-		.HomeSection{
-			min-height: 800px; /*-->¿por que se rompe cuando achico el height*/
+		.HomeSection1{
+			height: 200px;
+			border: solid black 1px;
 			display: flex;
 			justify-content: center;
-			text-align: center;
+			align-items: center;
 
 		}
+
+		.HomeSection2{
+			margin-top: 10px;
+			border: solid black 1px;
+			height: 500px;
+			display: flex;
+	
+
+		}
+
+		#divHome{
+		text-align: center;
+		}
+
+		.block{
+			border: solid black 1px;
+			height: 100%;
+			width: 100%;
+		}
+
+		.box1{
+
+			background: #fffde7;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.h4nosotras{
+			margin-bottom: 60px;
+			
+		}
+
+		.ImgNosotras{
+			width: 100%;
+			height: 500px;
+
+		}
+
+		.divnosotras{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.BntSaberMas{
+			width: 100px;
+		}
+		
 
 		/*GRID AREAS*/
 
