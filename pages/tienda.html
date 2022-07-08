@@ -3,128 +3,106 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tienda</title>
+	<title>Tienda Bootstrap</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="../style/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Raleway:wght@200&display=swap" rel="stylesheet">  
 </head>
-<body class="body_tienda"> 
- <div id="main">
-		<header class=header>   
-			<ul class="ul">
-				<li id="logo" class="social" >
-					<a  href="pages/index.html" target="_blank"><img class="iglogo"src="../media/logo.png" alt=""></a>
-				</li>
-				<li class="menu" >
-					<a  href="pages/tienda.html" target="_blank"><strong>Tienda</strong></a>
-				</li>
-				<li class="menu">
-					<a  href="pages/suscripciones.html" target="_blank" ><strong>Suscripciones</strong></a>
-				</li>
-				<li class="menu">
-					<a  href="pages/flowerbox.html" target="_blank"><strong>Eventos</strong></a>
-				</li>
-				<li class="menu">
-					<a  id=" nos" href="pages/nosotras.html" target="_blank"><strong>Nosotras</strong></a>
-				</li>	
-				<li class="menu">
-					<a  href="pages/contacto.html" target="_blank" target="_blank"><strong>Contacto</strong></a>
-				</li>
-				<li class="social" >
-					<a  href="pages/tienda.html" target="_blank"><img class="logo"src="../media/facebook1.png" alt=""></a>
-				</li>
-				<li class="social" >
-					<a  href="pages/tienda.html" target="_blank"><img class="logo"src="../media/iglogo.png" alt=""></a>
-				</li>
-				<li class="social" >
-					<a  href="pages/tienda.html" target="_blank"><img class="logo"src="../media/whatsap.png" alt=""></a>
-				</li>
-			</ul>
-		</header>
+<body> 
+
+	<nav  id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a  class="navbar-brand" href="#"><img id="logoLO" src="media/logo.png" alt=""></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		    <div class="navbar-nav">
+		      <a class="nav-item nav-link active" href="#">Tienda <span class="sr-only">(current)</span></a>
+		      <a class="nav-item nav-link" href="#">Suscripciones</a>
+		      <a class="nav-item nav-link" href="#">Eventos</a>
+		      <a class="nav-item nav-link " href="#">Nosotras</a>
+		      <a class="nav-item nav-link " href="#">Contacto</a>
+		    </div>
+		  </div>
+	</nav>
 
 
-	<section class="TiendaSection">
+	<section class="TiendaSection1">
 
 			<div class="title">
 				<h1>NUESTRA TIENDA</h1>	
 				<h3>La entrega de los ramos se programa con un plazo de reserva minima de 48 hs. </h3>
 			</div>
-			<aside class="categories"> 
-				<h3>Menu lateral</h3>
-					<ul class="list">
-						<li class="category"><a href="">Ramos</a></li>
-						<li ><a href="">Flower boxes</a></li>
-						<li><a href="">Arreglos</a></li>
-						<li><a href="">Ramos secos</a></li>
-						<li><a href="">Especiales</a></li>
-						<li><a href="">Mas</a></li>
-					</ul>
-			</aside>
-				<section class="products">
-					<article class="product">
-						<img class="images" src="../media/ramo1.webp" alt="">
-							<p>Rosas</p>
-							<hr>
-							<p>$3000</p>
-						</img>
-					</article>
-					<article class="product">
-						<img class="images"src="../media/ramo1.webp" alt="">
-							<p>Rosas</p>
-							<hr>
-							<p>$3000</p>
-						</img>
-					</article>
-					<article class="product">
-						<img class="images"src="../media/ramo1.webp" alt="">
-							<p>Rosas</p>
-							<hr>
-							<p>$3000</p>
-						</img>
-					</article>
-					<article class="product">
-						<img class="images"src="../media/ramo1.webp" alt="">
-							<p>Rosas</p>
-							<hr>
-							<p>$3000</p>
-						</img>
-					</article>
-						<article class="product">
-						<img class="images"src="../media/ramo1.webp" alt="">
-							<p>Rosas</p>
-							<hr>
-							<p>$3000</p>
-						</img>
-					</article>
-					<article class="product">
-						<img class="images"src="../media/ramo1.webp" alt="">
-							<p>Rosas</p>
-							<hr>
-							<p>$3000</p>
-						</img>
-					</article>
-					<article class="product">
-						<img class="images"src="../media/ramo1.webp" alt="">
-							<p>Rosas</p>
-							<hr>
-							<p>$3000</p>
-						</img>
-					</article>
-					<article class="product">
-						<img class="images"src="../media/ramo1.webp" alt="">
-							<p>Rosas</p>
-							<hr>
-							<p>$3000</p>
-						</img>
-					</article>
-					<article class="product">
-						<img class="images"src="../media/ramo1.webp" alt="">
-							<p>Rosas</p>
-							<hr>
-							<p>$3000</p>
-						</img>
-					</article>
-				</section>
-	</section>		
+
+	<section class="container-fluid ">
+     
+	    <div class="row justify-content-around">
+	      <div class="card" style="width: 18rem;">
+	        <img class="card-img-top" src="../media/ramo1.webp" alt="Card image cap">
+	        <div class="card-body text-center">
+	          <P class="card-text"> Sarasa</P>
+	          <p class="card-text"> $3000</p>
+	          <a href="#" class="btn btn-primary">Comprar</a>
+	        </div>
+	      </div>
+	      <div class="card" style="width: 18rem;">
+	        <img class="card-img-top" src="../media/ramo1.webp" alt="Card image cap">
+	        <div class="card-body text-center">
+	          <P class="card-text"> Sarasa</P>
+	          <p class="card-text"> $3000</p>
+	          <a href="#" class="btn btn-primary">Comprar</a>
+	        </div>
+	      </div>
+	      <div class="card" style="width: 18rem;">
+	        <img class="card-img-top" src="../media/ramo1.webp" alt="Card image cap">
+	        <div class="card-body text-center">
+	          <P class="card-text"> Sarasa</P>
+	          <p class="card-text"> $3000</p>
+	          <a href="#" class="btn btn-primary">Comprar</a>
+	        </div>
+	      </div>
+	      <div class="card" style="width: 18rem;">
+	        <img class="card-img-top" src="../media/ramo1.webp" alt="Card image cap">
+	        <div class="card-body text-center">
+	          <P class="card-text"> Sarasa</P>
+	          <p class="card-text"> $3000</p>
+	          <a href="#" class="btn btn-primary">Comprar</a>
+	        </div>
+	      </div>
+	      <div class="card" style="width: 18rem;">
+	        <img class="card-img-top" src="../media/ramo1.webp" alt="Card image cap">
+	        <div class="card-body text-center">
+	          <P class="card-text"> Sarasa</P>
+	          <p class="card-text"> $3000</p>
+	          <a href="#" class="btn btn-primary">Comprar</a>
+	        </div>
+	      </div>
+	      <div class="card" style="width: 18rem;">
+	        <img class="card-img-top" src="../media/ramo1.webp" alt="Card image cap">
+	        <div class="card-body text-center">
+	          <P class="card-text"> Sarasa</P>
+	          <p class="card-text"> $3000</p>
+	          <a href="#" class="btn btn-primary">Comprar</a>
+	        </div>
+	    	</div>
+	    	<div class="card" style="width: 18rem;">
+	        <img class="card-img-top" src="../media/ramo1.webp" alt="Card image cap">
+	        <div class="card-body text-center">
+	          <P class="card-text"> Sarasa</P>
+	          <p class="card-text"> $3000</p>
+	          <a href="#" class="btn btn-primary">Comprar</a>
+	        </div>
+	    	</div>
+	    	<div class="card" style="width: 18rem;">
+	        <img class="card-img-top" src="../media/ramo1.webp" alt="Card image cap">
+	        <div class="card-body text-center">
+	          <P class="card-text"> Sarasa</P>
+	          <p class="card-text"> $3000</p>
+	          <a href="#" class="btn btn-primary">Comprar</a>
+	        </div>
+	    	</div>
+
+
 				
 	<footer class="footer">
 		<div class="div">
@@ -132,7 +110,7 @@
 				<li class="title"><strong>TALLER PRIVADO</strong></li>
 				<li class="info">Olivos, Prov. de Buenos Aires, Argentina</li>
 				<li class="info">Teléfono y Whatsapp:011 3 074 1300</li>
-				<li class="info"><a  href="" target="_blank"><img class="logo"src="../media/whatsap.png" alt=""></a></li>
+				<!-- <li class="info"><a  href="" target="_blank"><img class="logo"src="../media/whatsap.png" alt=""></a></li> -->
 			</ul>
 		</div>
 		<div class="div">
@@ -145,7 +123,9 @@
 			</ul>
 		</div>
 	</footer>
-  </div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
 

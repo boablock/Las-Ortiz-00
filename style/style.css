@@ -85,7 +85,7 @@
 
 		footer{
 			width: 100%;
-		/*	height: 300px;*/
+			height: 500px;
 			background: #EDE1DB;
 			display: flex;
 			justify-content: center;
@@ -183,9 +183,7 @@
 			align-items: center;
 		}
 
-		.BntSaberMas{
-			width: 100px;
-		}
+
 		
 
 		/*GRID AREAS*/
@@ -219,155 +217,37 @@
 
 		/*tienda*/
 
-		/*GRID AREAS*/
-
-
-		.title{
-			grid-area: title;
-			/*border: solid 1px black;*/
+		.tiendaSection1{
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-
 		}
 
-		aside{
-			grid-area: aside;
-			/*border: solid 1px black;*/
+		.title{
+			margin: 20px;
 			display: flex;
 			flex-direction: column;
-			justify-content: start;
+			justify-content: center;
 			align-items: center;
-
 		}
 
-		.products{
-			grid-area: products;
-
+		.btn-primary{
+			background-color: #EDE1DB;
+			color: black;
+			border-style: none;
 		}
 
-		.list{
-			/*border: solid 1px black;*/
-			margin-left: 20px;
-			text-decoration: none;
-			list-style: none;
-			padding: 20px;
-
+		.btn-primary:hover{
+			background: #b39ddb;
 		}
 
-		aside ul li{
-			padding: 3px;
-
-		}
-
-		a {
-			text-decoration: none;
-
-		}
-
-		h3{
-		text-align: center;
-		margin-bottom: 0px;
-
+		.card{
+			margin: 20px;
 		}
 
 
-		.TiendaSection,
-		.products{
-			display: grid;
-			grid-gap: 10px;
-
-		}
-
-		@media screen and (min-width: 320px) {
-
-			.TiendaSection{
-			min-height: 1500px; /*-->¿por que se rompe cuando achico el height*/
-			
-			grid-template-columns: auto ;
-			grid-template-rows:10% auto ;
-			
-		  row-gap: 10px;
-		  grid-template-areas: "title" "products" ;
-		}
-
-		.products{
-			/*border: solid 2px black;*/
-			
-			grid-template-columns: auto auto  ;
-			grid-template-rows: auto  ;
-			
-		}
-
-		aside{
-			display: none;
-		}
-
-		.ul{
-			display: none;
-
-		}
-
-		ul li #logo{
-			display: block;
-
-		}
-
-		.menu{
-			display: none;
-
-		}
-		}
-
-
-
-		@media screen and (min-width: 1200px) {
-
-		.TiendaSection{
-			min-height: 1500px; /*-->¿por que se rompe cuando achico el height*/
-			
-			grid-template-columns: 15% auto;
-			grid-template-rows:10% auto ;
-			
-		  row-gap: 10px;
-		  grid-template-areas: "title title" "aside products" ;
-		}
-
-		.products{
-		/*	border: solid 2px black;*/
-			
-			grid-template-columns: auto auto auto;
-			grid-template-rows: auto auto auto;
-			
-
-		}
-		aside{
-			display: block;
-		}
-
-		.ul{
-			display: flex;
-
-		}
-
-
-
-		}
-
-		.product{
-			border: solid 1px black;
-			border-radius: 10px;
-			text-align: center;
-		}
-
-		.images{
-			width: 250px;
-			height: ;
-		}
-
-
-
+		
 
 		/*contacto*/
 
