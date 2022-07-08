@@ -456,6 +456,12 @@
 
 		}
 
+		.d-block,
+		.w-100{
+			width: 500px;
+			height: 600px;
+		 }
+
 		/*animaciones, transicion o transformacion*/ 
 
 		h1, h2, #logo{
