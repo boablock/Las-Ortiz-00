@@ -127,6 +127,35 @@
 
 		/***HOME***/
 
+		#divHome{
+			text-align: center;
+			display: flex;
+			justify-content: start;
+			flex-direction: column;
+			margin-top: 40px;
+		}
+
+		.div1{
+			background-image: url(../media/backgroundhome2.jpg);
+			background-size: cover;
+			height: 500px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+
+		.boxTransparente{
+			background-color: #EDE1DB;
+			-moz-opacity:.75;opacity:.75;
+			border-radius: 10px;
+			width: 450px;
+			height: 250px;
+			display: flex;
+			justify-content: center;
+		}
+
+
 		.HomeSection1{
 			height: 200px;
 			border: solid black 1px;
@@ -145,9 +174,8 @@
 
 		}
 
-		#divHome{
-		text-align: center;
-		}
+		/*
+		*/
 
 		.block{
 			border: solid black 1px;
@@ -163,6 +191,17 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+
+		}
+
+		.box1Content{
+			border: solid black 1px;
+			margin: 50px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
 		}
 
 		.h4nosotras{
@@ -181,6 +220,7 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+
 		}
 
 
