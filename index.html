@@ -3,7 +3,7 @@
 <head> 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home Bootstrap</title>
+	<title>Home SDFP</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="style/style.css">
@@ -13,83 +13,68 @@
 <body> 
 
 	<nav  id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
-		  <a  class="navbar-brand" href="#"><img id="logoLO" src="media/logo.png" alt=""></a>
+		  <a  class="navbar-brand" href="index.html"><img id="logoLO" src="media/logo.png" alt=""></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		    <div class="navbar-nav">
-		      <a class="nav-item nav-link" href="#">Tienda </a>
-		      <a class="nav-item nav-link" href="#">Suscripciones</a>
-		      <a class="nav-item nav-link" href="#">Eventos</a>
-		      <a class="nav-item nav-link " href="#">Nosotras</a>
-		      <a class="nav-item nav-link " href="#">Contacto</a>
-		      <i class="bi bi-bag"></i>
+		      <a class="nav-item nav-link" href="pages/tienda.html" >Tienda </a>
+		      <a class="nav-item nav-link" href="pages/suscripciones.html">Suscripciones</a>
+		      <a class="nav-item nav-link" href="pages/eventos.html">Eventos</a>
+		      <a class="nav-item nav-link " href="pages/nosotras.html">Nosotras</a>
+		      <a class="nav-item nav-link " href="pages/contacto.html">Contacto</a>
+		      <i class="bi bi-bag" ></i>
 		    </div>
-		  </div>
+		  </div> 
 	</nav>
-	<div class="div1">
+	<section class="HomeSection1">
 		<div class="boxTransparente">
 			<div id="divHome" class="wow animate__animated animate__pulse">
 				<h1 class="wow animate__animated animate__pulse" > Las ortiz</h1>
 				<h2 id="h2"> Flower Store</h2> 
-				<a href="https://www.instagram.com/lasortiz.flowerstore/" ><i class="bi bi-instagram"></i></a>
+				<a href="https://www.instagram.com/lasortiz.flowerstore/" target="_blank"><i class="bi bi-instagram"></i></a>
 			</div>	
 	    <!-- <img class="img-fluid" src="media/fondo.jpg" alt=""> -->
 	    </div>
-	</div>
-
+	</section>
 		
-
-
-
-		<section class="HomeSection2">
-			<div class="block">
-				<div class="box1">
-
-					<div class="boxContent">
-					<h4 class="h4nosotras">NOSOTRAS</h4>
-					
-					
-					<p class="pBlock">Nos dedicamos al diseño con flores, plantas y materiales propios de la naturaleza desde nuestro taller en Olivos. Ramos de suscripción, regalos frescos, productos de la naturaleza y objetos en nuestra Tienda Online.Ramos de novia. Instalaciones y estilismo con materiales de la naturaleza. </p>
-					<a href="#" class="btn btn-primary">Saber mas</a>
-				
+		<section class="container-fluid">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="box1">
+							<h4 class="h4nosotras">NOSOTRAS</h4>
+							<p class="pBlock">Nos dedicamos al diseño con flores, plantas y materiales propios de la naturaleza desde nuestro taller en Olivos. Ramos de suscripción, regalos frescos, productos de la naturaleza y objetos en nuestra Tienda Online.Ramos de novia. Instalaciones y estilismo con materiales de la naturaleza. </p>
+							<a href="#" class="btn btn-primary">Saber mas</a>
+					</div>	
+				</div>
+				<div class="col-md-6">
+					<div class="box2">
+						<h4 class="h4nosotras">NOSOTRAS</h4>
+							<p class="pBlock">Nos dedicamos al diseño con flores, plantas y materiales propios de la naturaleza desde nuestro taller en Olivos. Ramos de suscripción, regalos frescos, productos de la naturaleza y objetos en nuestra Tienda Online.Ramos de novia. Instalaciones y estilismo con materiales de la naturaleza. </p>
+							<a href="#" class="btn btn-primary">Saber mas</a>
 					</div>
-			
-				</div>	
-			</div>
-
-			<div class="block">
-				<div class="box2">
-					<img class="ImgNosotras" src="media/nosotras.jpg" alt="">
 				</div>
 			</div>
 		</section>
 
-	
-
-
-		<section class="HomeSection2">
-			<div class="block">
-				<div class="box2">
-					<img class="ImgNosotras" src="media/suscripciones.jpg" alt="">
-				</div>
-			</div>
-			<div class="block">
-				<div class="box1">
-
-					<div class="boxContent">
-					<h4 class="h4nosotras">SUSCRIPCIONES</h4>
-					
-					
-					<p class="pBlock">Todos los Sábados y Miércoles  enviamos flores frescas, cada semana un ramo diferente, seleccionando lo mas lindo y fresco del mercado. </p>
-					<a href="#" class="btn btn-primary">Perdi cotizacion</a>
-				
-					</div>
+		<section class="container-fluid">
 			
-				</div>	
-					
-			</div>
+				<div class="block">
+					<div class="box2">
+						<!-- <img class="ImgNosotras" src="media/suscripciones.jpg" alt=""> -->
+					</div>
+				</div>
+				<div class="block">
+					<div class="box1">
+						<div class="boxContent">
+							<h4 class="h4nosotras">SUSCRIPCIONES</h4>
+							<p class="pBlock">Todos los Sábados y Miércoles  enviamos flores frescas, cada semana un ramo diferente, seleccionando lo mas lindo y fresco del mercado. </p>
+							<a href="#" class="btn btn-primary">Perdi cotizacion</a>
+						</div>
+					</div>	
+				</div>
+		
 		</section>
 
 
