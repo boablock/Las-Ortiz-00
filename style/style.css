@@ -1,12 +1,8 @@
 
 		/* lo unica clase caracteristica de cada page es body_"page" y main_"page"; luego uso herencia*/
 
-		*, *:before, *:after {
 
-		  box-sizing: inherit;
-		}
-
-		body{
+		body{ 
 		/*	min-height: 150vh;*/
 			font-family: 'Raleway', sans-serif;
 			margin: 0px;
@@ -22,6 +18,7 @@
 		}
 
 
+
 		.navbar-nav{
 			background: #EDE1DB;
 			height: 100px;
@@ -31,14 +28,19 @@
 			align-items: center;
 		}
 
+		.nav-item{
+			font-weight: 700;
+		}
+
 		#logoLO{
 			border-radius: 40px !important; 
 			width: 50px;
 
 		}
 
-		#navbar{
+		.NavCustom{
 			background: #EDE1DB;
+
 		}
 
 		/*.navbar-nav{
@@ -94,15 +96,16 @@
 
 		}
 
-		footer div{
-			width: 50%;
+		.FooterContainer{
+			width: 1000%;
 			display: flex;
-			justify-content: center;
+			flex-direction: row;
+			justify-content: space-around;
 			align-items: center;
 		}
 
 		.column{
-			width: 50%;
+			width: 70%;
 			height: 200px;
 			display: flex;
 			flex-direction: column;
@@ -111,21 +114,49 @@
 		}
 
 		.title{
+			align-items: center;
+			text-align: center;
 			font-family: 'Raleway', sans-serif;
 			display: flex;
-			flex: 2;
+			flex: 4;
 
 		}
 
 		.info{
+			align-items: center;
+			text-align: center;
 			font-family: 'Raleway', sans-serif;
 			display: flex;
+			justify-content: center;
 			flex: 1;
+		}
+
+		#ulFooter{
+			height: 70%;
+			display: flex;
+			flex-direction: column;
+			
+		}
+
+		.row{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 
 
 
 		/***HOME***/
+
+		.bi-instagram{
+			font-size: 30px;
+			color: black;
+		}
+
+		
+		
 
 		#divHome{
 			text-align: center;
@@ -135,13 +166,14 @@
 			margin-top: 40px;
 		}
 
-		.div1{
+		.HomeSection1{
 			background-image: url(../media/backgroundhome2.jpg);
 			background-size: cover;
 			height: 500px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+
 		}
 
 
@@ -155,73 +187,55 @@
 			justify-content: center;
 		}
 
-
-		.HomeSection1{
-			height: 200px;
-			border: solid black 1px;
+		.block1{
 			display: flex;
+			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			background: #fffde7;
+			height: 500px;
+		} 
+
+
+		.h4Nosotras{
+			padding: 20px;
 
 		}
+ 
 
-		.HomeSection2{
-			margin-top: 10px;
-			border: solid black 1px;
+
+		.pBlock{
+			text-align: center;
+		}
+
+		.block2{
+			background: #fffde7;
 			height: 500px;
-			display: flex;
+		}
+		
+		#h4Nosotras{
+			margin-bottom: 20px !important;
+			border: solid black 1px; 
+		} 
+
+		#imgNosotras{
+			object-fit: cover;
+			max-width: 100%;
+			height:500px;
+		}
+			
+
+
+
 	
 
-		}
+		
 
-		/*
-		*/
 
-		.block{
-			border: solid black 1px;
-			height: 100%;
-			width: 100%;
-		}
+		
+		
 
-		.box1{
-
-			background: #fffde7;
-			height: 100%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-
-		}
-
-		.box1Content{
-			border: solid black 1px;
-			margin: 50px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-
-		}
-
-		.h4nosotras{
-			margin-bottom: 60px;
-			
-		}
-
-		.ImgNosotras{
-			width: 100%;
-			height: 500px;
-
-		}
-
-		.divnosotras{
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-
-		}
+		
 
 
 		
@@ -276,10 +290,15 @@
 			background-color: #EDE1DB;
 			color: black;
 			border-style: none;
+			transition: all 0.3s ease-in-out;
 		}
+
+
+
 
 		.btn-primary:hover{
 			background: #b39ddb;
+			transform: scale(0.9);
 		}
 
 		.card{
@@ -392,9 +411,10 @@
 			background:  #fce4ec;
 			color: black;
 			border: solid 1px black;
-
+			
 		}
 
+		
 
 		/*nosotras*/
 
