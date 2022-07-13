@@ -10,31 +10,31 @@
 	<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Raleway:wght@200&display=swap" rel="stylesheet">  
 </head>
 <body> 
+	<header >
+		<nav  id="navbar" class="navbar navbar-expand-lg navbar-light NavCustom ">
+			  <a  class="navbar-brand" href="../index.html"><img id="logoLO" src="../media/logo.png" alt=""></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			    <div class="navbar-nav">
+			      <a class="nav-item nav-link" href="../pages/tienda.html" >Tienda </a>
+			      <a class="nav-item nav-link" href="../pages/suscripciones.html">Suscripciones</a>
+			      <a class="nav-item nav-link" href="../pages/eventos.html">Eventos</a>
+			      <a class="nav-item nav-link " href="../pages/nosotras.html">Nosotras</a>
+			      <a class="nav-item nav-link " href="../pages/contacto.html">Contacto</a>
+			      <i class="bi bi-bag" ></i>
+			    </div>
+			  </div>
+		</nav>
+	</header>
 
-	<nav  id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
-		  <a  class="navbar-brand" href="../index.html"><img id="logoLO" src="../media/logo.png" alt=""></a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		    <div class="navbar-nav">
-		      <a class="nav-item nav-link active" href="file:///C:/Users/Usuario/Dropbox/PC/Documents/Coding/Coderhouse/projets/Las%20Ortiz/root00/pages/tienda.html">Tienda <span class="sr-only">(current)</span></a>
-		      <a class="nav-item nav-link" href="#">Suscripciones</a>
-		      <a class="nav-item nav-link" href="#">Eventos</a>
-		      <a class="nav-item nav-link " href="#">Nosotras</a>
-		      <a class="nav-item nav-link " href="#">Contacto</a>
-		    </div>
-		  </div>
-	</nav>
 
-
-	<section class="TiendaSection1">
-
+	<section class="TiendaSection1 container-fluid">
 			<div class="title">
-				<h1>NUESTRA TIENDA</h1>	
+				<h1>Productos destacados</h1>	
 				<h3>La entrega de los ramos se programa con un plazo de reserva minima de 48 hs. </h3>
 			</div>
-
 	<section class="container-fluid ">
      
 	    <div class="row justify-content-around">
@@ -105,20 +105,24 @@
 
 
 				
-	<footer>
-		<div class="FooterContainer">
-					<ul id="ulFooter">
+		<footer>
+		<div class="FooterContainer container-fluid">
+			<div class="row justify-content-around">
+					<ul id="ulFooter col-sm-6">
 						<li class="title"><strong>TALLER PRIVADO</strong></li>
 						<li class="info">Olivos, Prov. de Buenos Aires, Argentina</li>
 						<li class="info">Teléfono y Whatsapp:011 3 074 1300</li>
-						<a href="https://www.instagram.com/lasortiz.flowerstore/"><i class="bi bi-whatsapp"></i></a>
+						<a href="https://www.instagram.com/lasortiz.flowerstore/"><i class="bi bi-whatsapp info"></i></a>
 					</ul>
-					<ul id="ulFooter">
+			
+			
+					<ul id="ulFooter col-sm-6">
 						<li class="title"> <strong>HORARIOS DE ATENCION</strong></li>
 						<li class="info">Lunes a Viernes: 9hs a 19 hs</li>
 						<li class="info">Sábados: 9hs a 13 hs</li>
 						<li class="info">Domingos: cerrado</li>
 					</ul>
+			</div>
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

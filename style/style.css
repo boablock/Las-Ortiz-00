@@ -18,6 +18,7 @@
 		}
 
 
+
 		.navbar-nav{
 			background: #EDE1DB;
 			height: 100px;
@@ -27,14 +28,19 @@
 			align-items: center;
 		}
 
+		.nav-item{
+			font-weight: 700;
+		}
+
 		#logoLO{
 			border-radius: 40px !important; 
 			width: 50px;
 
 		}
 
-		#navbar{
+		.NavCustom{
 			background: #EDE1DB;
+
 		}
 
 		/*.navbar-nav{
@@ -108,6 +114,7 @@
 		}
 
 		.title{
+			align-items: center;
 			text-align: center;
 			font-family: 'Raleway', sans-serif;
 			display: flex;
@@ -116,9 +123,11 @@
 		}
 
 		.info{
+			align-items: center;
 			text-align: center;
 			font-family: 'Raleway', sans-serif;
 			display: flex;
+			justify-content: center;
 			flex: 1;
 		}
 
@@ -126,6 +135,13 @@
 			height: 70%;
 			display: flex;
 			flex-direction: column;
+			
+		}
+
+		.row{
+			width: 100%;
+			height: 100%;
+			display: flex;
 			justify-content: center;
 			align-items: center;
 		}
@@ -139,9 +155,7 @@
 			color: black;
 		}
 
-		.nav-item{
-			font-weight: 700;
-		}
+		
 		
 
 		#divHome{
@@ -178,7 +192,7 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			background: turquoise;
+			background: #fffde7;
 			height: 500px;
 		} 
 
@@ -195,7 +209,7 @@
 		}
 
 		.block2{
-			background: #EDE1DB;
+			background: #fffde7;
 			height: 500px;
 		}
 		
@@ -276,10 +290,15 @@
 			background-color: #EDE1DB;
 			color: black;
 			border-style: none;
+			transition: all 0.3s ease-in-out;
 		}
+
+
+
 
 		.btn-primary:hover{
 			background: #b39ddb;
+			transform: scale(0.9);
 		}
 
 		.card{
@@ -392,9 +411,10 @@
 			background:  #fce4ec;
 			color: black;
 			border: solid 1px black;
-
+			
 		}
 
+		
 
 		/*nosotras*/
 
