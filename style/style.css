@@ -1,5 +1,4 @@
 
-		/* lo unica clase caracteristica de cada page es body_"page" y main_"page"; luego uso herencia*/
 
 
 		body{ 
@@ -16,8 +15,6 @@
 			font-size: 50px;
 		  
 		}
-
-
 
 		.navbar-nav{
 			background: #EDE1DB;
@@ -50,11 +47,6 @@
 		}*/
 
 		
-		
-
-			
-		
-	
 
 	/*	li.menu{
 			display: flex;
@@ -227,18 +219,6 @@
 
 
 
-	
-
-		
-
-
-		
-		
-
-		
-
-
-		
 
 		/*GRID AREAS*/
 
@@ -496,10 +476,6 @@
 		.img_nosotras{
 			width: 700px;
 		}*/
-
-
-
-
 
 
 		/*suscripciones*/
