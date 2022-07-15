@@ -1,9 +1,9 @@
 
 
+/*ESTILOS GENERALES*/
 body {
 
-    font-family: 'Raleway', sans-serif;
-
+    font-family: $Font-Family;
 
    }
   
@@ -11,8 +11,10 @@ body {
     font-size: 50px; }
   
 
+    
+
   .NavCustom {
-    background: #EDE1DB; 
+    background: $BaseColor; 
 
     #logoLO {
         border-radius: 40px !important;
@@ -21,7 +23,7 @@ body {
     }
 
     .navbar-nav {
-        background: #EDE1DB;
+        background: $BaseColor;
         height: 100px;
         width: 100%;
         display: flex;
@@ -38,7 +40,7 @@ body {
   footer {
     width: 100%;
     height: 500px;
-    background: #EDE1DB;
+    background: $BaseColor;
     display: flex;
     justify-content: center;
     margin: 0px; 
@@ -95,7 +97,7 @@ body {
     justify-content: center;
     align-items: center; 
     .boxTransparente {
-      background-color: #EDE1DB;
+      background-color: $BaseColor;
       -moz-opacity: .75;
       opacity: .75;
       border-radius: 10px;
@@ -123,7 +125,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #fffde7;
+    background: $SecondaryColor;
     height: 500px; 
     .h4Nosotras {
       padding: 20px;
@@ -139,7 +141,7 @@ body {
  
   
   .block2 {
-    background: #fffde7;
+    background: $SecondaryColor;
     height: 500px;
     #imgNosotras {
       object-fit: cover;
@@ -168,12 +170,12 @@ body {
     margin: 20px; 
   
     .btn-primary {
-      background-color: #EDE1DB;
+      background-color: $BaseColor;
       color: black;
       border-style: none;
       transition: all 0.3s ease-in-out; 
       .btn-primary:hover {
-        background: #b39ddb;
+        background: $hover;
         transform: scale(0.9); }
       }
     }
@@ -198,7 +200,7 @@ body {
       width: 30%;
       height: 40%;
       text-align: center;
-      background: #EDE1DB;
+      background: $BaseColor;
       opacity: 0.8;
       border-radius: 10px; }
     }
