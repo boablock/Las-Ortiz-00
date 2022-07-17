@@ -84,6 +84,7 @@ body {
   
   /***HOME***/
 
+  
 
   
   .HomeSection1 {
@@ -171,7 +172,7 @@ body {
       color: black;
       border-style: none;
       transition: all 0.3s ease-in-out; 
-      .btn-primary:hover {
+      &:hover {
         background: #b39ddb;
         transform: scale(0.9); }
       }
