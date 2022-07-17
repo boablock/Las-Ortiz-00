@@ -3,15 +3,13 @@
 /*ESTILOS GENERALES*/
 body {
 
-    font-family: $Font-Family;
+    font-family: "Raleway", sans-serif;
 
    }
   
   h1 {
     font-size: 50px; }
   
-
-    
 
   .NavCustom {
     background: $BaseColor; 
@@ -86,7 +84,6 @@ body {
   
   /***HOME***/
 
-  
 
   
   .HomeSection1 {
@@ -175,7 +172,7 @@ body {
       border-style: none;
       transition: all 0.3s ease-in-out; 
       .btn-primary:hover {
-        background: $hover;
+        background: #b39ddb;
         transform: scale(0.9); }
       }
     }
