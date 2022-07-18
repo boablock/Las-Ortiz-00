@@ -1,72 +1,11 @@
-/*ESTILOS GENERALES*/
+/*ponerlo en orden de concor con el css*/ /*paleta colores, fuentes, medidas*/
+/*se hace a la par del html, al comienzo*/ /*estilos generales*/
 body {
   font-family: "Raleway", sans-serif;
 }
 
 h1 {
   font-size: 50px;
-}
-
-.NavCustom {
-  background: #EDE1DB;
-}
-.NavCustom #logoLO {
-  border-radius: 40px !important;
-  width: 50px;
-}
-.NavCustom .navbar-nav {
-  background: #EDE1DB;
-  height: 100px;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.NavCustom .navbar-nav .nav-item {
-  font-weight: 700;
-}
-
-footer {
-  width: 100%;
-  height: 500px;
-  background: #EDE1DB;
-  display: flex;
-  justify-content: center;
-  margin: 0px;
-}
-footer .FooterContainer {
-  width: 1000%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-footer .FooterContainer .row {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer .FooterContainer .row #ulFooter {
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-}
-footer .FooterContainer .row #ulFooter .title {
-  align-items: center;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  display: flex;
-  flex: 4;
-}
-footer .FooterContainer .row #ulFooter .info {
-  align-items: center;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  display: flex;
-  justify-content: center;
-  flex: 1;
 }
 
 /***HOME***/
@@ -216,4 +155,65 @@ h1 {
   100% {
     opacity: 1;
   }
+}
+.NavCustom {
+  background: #EDE1DB;
+}
+.NavCustom #logoLO {
+  border-radius: 40px !important;
+  width: 50px;
+}
+.NavCustom .navbar-nav {
+  background: #EDE1DB;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.NavCustom .navbar-nav .nav-item {
+  font-weight: 700;
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+  background: #EDE1DB;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+}
+footer .FooterContainer {
+  width: 1000%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .FooterContainer .row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .FooterContainer .row #ulFooter {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+}
+footer .FooterContainer .row #ulFooter .title {
+  align-items: center;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex: 4;
+}
+footer .FooterContainer .row #ulFooter .info {
+  align-items: center;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex: 1;
 }/*# sourceMappingURL=styles.css.map */

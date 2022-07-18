@@ -1,0 +1,19 @@
+.NavCustom {
+    background: $bgColor1;
+    #logoLO {
+        border-radius: 40px !important;
+        width: 50px;
+      }
+      .navbar-nav {
+        background: $bgColor1;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .nav-item {
+            font-weight: 700;
+          }
+      }
+  }
+  
