@@ -1,0 +1,233 @@
+/*ESTILOS GENERALES*/
+body {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+  
+  .NavCustom {
+    background: #EDE1DB;
+    #logoLO {
+        border-radius: 40px !important;
+        width: 50px;
+      }
+      .navbar-nav {
+        background: #EDE1DB;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .nav-item {
+            font-weight: 700;
+          }
+      }
+  }
+  
+  
+  footer {
+    width: 100%;
+    height: 500px;
+    background: #EDE1DB;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    .FooterContainer {
+        width: 1000%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        .row {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #ulFooter {
+                height: 70%;
+                display: flex;
+                flex-direction: column;
+                .title {
+                    align-items: center;
+                    text-align: center;
+                    font-family: "Raleway", sans-serif;
+                    display: flex;
+                    flex: 4;
+                  }
+                  .info {
+                    align-items: center;
+                    text-align: center;
+                    font-family: "Raleway", sans-serif;
+                    display: flex;
+                    justify-content: center;
+                    flex: 1;
+                  }
+              }
+          }
+      }
+  }
+
+  
+ 
+  
+  
+  /***HOME***/
+  .HomeSection1 {
+    background-image: url(../media/backgroundhome2.jpg);
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .boxTransparente {
+        background-color: #EDE1DB;
+        -moz-opacity: 0.75;
+        opacity: 0.75;
+        border-radius: 10px;
+        width: 450px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        #divHome {
+            text-align: center;
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+            margin-top: 40px;
+            .bi-instagram {
+                font-size: 30px;
+                color: black;
+              }
+          }
+      }
+  }
+  
+  
+  .block1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fffde7;
+    height: 500px;
+    .h4Nosotras {
+        padding: 20px;
+        margin-bottom: 20px !important;
+        border: solid black 1px;
+        .pBlock {
+            text-align: center;
+          }
+      }
+  }
+  
+  
+  .block2 {
+    background: #fffde7;
+    height: 500px;
+    #imgNosotras {
+        -o-object-fit: cover;
+           object-fit: cover;
+        max-width: 100%;
+        height: 500px;
+      }
+  }
+  
+  
+  /*tienda*/
+  .tiendaSection1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+  }
+  
+  
+  .card {
+    margin: 20px;
+    .btn-primary {
+        background-color: #EDE1DB;
+        color: black;
+        border-style: none;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background: #b39ddb;
+            transform: scale(0.9);
+          }
+      }
+  }
+  
+  
+  /*nosotras*/
+  .NosotrasSection1 {
+    width: 100%;
+    height: 150vh;
+    background: url(../media/nosotras.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .text {
+        width: 30%;
+        height: 40%;
+        text-align: center;
+        background: #EDE1DB;
+        opacity: 0.8;
+        border-radius: 10px;
+      }
+  }
+
+  
+  /*suscripciones*/
+  /*eventos*/
+  .d-block,
+  .w-100 {
+    width: 500px;
+    height: 600px;
+  }
+  
+  /*animaciones, transicion o transformacion*/
+  h1, h2, #logo {
+    font-size: 30px;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-name: aparecer;
+            animation-name: aparecer;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+  
+  @-webkit-keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
