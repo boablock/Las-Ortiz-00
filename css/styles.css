@@ -1,5 +1,6 @@
 /*ponerlo en orden de concor con el css*/ /*paleta colores, fuentes, medidas*/
-/*se hace a la par del html, al comienzo*/ /*estilos generales*/
+/*se hace a la par del html, al comienzo*/
+/*estilos generales*/
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -156,14 +157,14 @@ h1 {
     opacity: 1;
   }
 }
-.NavCustom {
+.navCustom {
   background: #EDE1DB;
 }
-.NavCustom #logoLO {
+.navCustom #logoLO {
   border-radius: 40px !important;
   width: 50px;
 }
-.NavCustom .navbar-nav {
+.navCustom .navbar-nav {
   background: #EDE1DB;
   height: 100px;
   width: 100%;
@@ -171,7 +172,7 @@ h1 {
   justify-content: space-around;
   align-items: center;
 }
-.NavCustom .navbar-nav .nav-item {
+.navCustom .navbar-nav .nav-item {
   font-weight: 700;
 }
 
@@ -216,4 +217,8 @@ footer .FooterContainer .row #ulFooter .info {
   display: flex;
   justify-content: center;
   flex: 1;
+}
+
+#navbar, .FooterContainer {
+  background-color: #EDE1DB;
 }/*# sourceMappingURL=styles.css.map */

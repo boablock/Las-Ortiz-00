@@ -1,0 +1,11 @@
+$vista: escritorio;
+
+@if ($vista == escritorio) {
+    #navbar,.FooterContainer{
+        background-color: $bgColor1;
+    }
+}@else{
+    #navbar, .FooterContainer{
+        background-color: $hover;
+    }
+}
