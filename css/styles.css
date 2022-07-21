@@ -161,7 +161,7 @@ h1 {
 }
 .NavCustom #logoLO {
   border-radius: 40px !important;
-  width: 50px;
+  width: 75px;
 }
 .NavCustom .navbar-nav {
   background: #EDE1DB;
@@ -177,7 +177,7 @@ h1 {
 
 footer {
   width: 100%;
-  height: 500px;
+  height: 300px;
   background: #EDE1DB;
   display: flex;
   justify-content: center;
@@ -194,26 +194,29 @@ footer .FooterContainer .row {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
-footer .FooterContainer .row #ulFooter {
+footer .FooterContainer .row .ulFooter {
   height: 70%;
   display: flex;
   flex-direction: column;
-}
-footer .FooterContainer .row #ulFooter .title {
   align-items: center;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  display: flex;
-  flex: 4;
 }
-footer .FooterContainer .row #ulFooter .info {
-  align-items: center;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
+footer .FooterContainer .row .ulFooter .title {
   display: flex;
-  justify-content: center;
+  flex: 3;
+}
+footer .FooterContainer .row .ulFooter .info {
+  display: flex;
   flex: 1;
+}
+footer .FooterContainer .row .ulFooter .bi {
+  height: 50px;
+  font-size: 1.5em;
+  color: black;
+  margin-top: 20px;
+}
+footer .FooterContainer .row .ulFooter #logoWhatsap {
+  margin-top: 5px;
 }/*# sourceMappingURL=styles.css.map */
