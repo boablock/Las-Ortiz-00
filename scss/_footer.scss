@@ -4,21 +4,24 @@ footer {
     background: #EDE1DB;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0px;
     .FooterContainer 
     {
         width: 1000%;
+        height: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+
         .row 
         {
             width: 100%;
             height: 100%;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+
             .ulFooter{
                 height: 65%;
                 width: 33%;
