@@ -85,13 +85,14 @@ h1 {
 .card {
   margin: 20px;
 }
-.card .btn-primary {
+
+.btn-primary {
   background-color: #EDE1DB;
   color: black;
   border-style: none;
   transition: all 0.3s ease-in-out;
 }
-.card .btn-primary:hover {
+.btn-primary:hover {
   background: #b39ddb;
   transform: scale(0.9);
 }
@@ -194,11 +195,12 @@ footer .FooterContainer .row {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 footer .FooterContainer .row .ulFooter {
-  height: 70%;
+  height: 65%;
+  width: 33%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -219,4 +221,7 @@ footer .FooterContainer .row .ulFooter .bi {
 }
 footer .FooterContainer .row .ulFooter #logoWhatsap {
   margin-top: 5px;
+}
+footer .FooterContainer .row .ulFooter .igBox {
+  height: 40%;
 }/*# sourceMappingURL=styles.css.map */
