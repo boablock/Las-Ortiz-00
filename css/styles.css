@@ -175,10 +175,13 @@ h1 {
 .NavCustom .navbar-nav .nav-item {
   font-weight: 700;
 }
+.NavCustom .navbar-nav .bi-bag {
+  font-size: 1.3em;
+}
 
 .FooterContainer {
   width: 100%;
-  height: 500px;
+  height: 300px;
   background-color: #EDE1DB;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -191,7 +194,7 @@ h1 {
   align-items: center;
 }
 .FooterContainer .footerBox ul {
-  height: 45%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -211,11 +214,16 @@ h1 {
   justify-content: center;
   margin-top: 40px;
 }
+.FooterContainer .footerBox ul .bi {
+  font-size: 1.5em;
+  text-align: center;
+  color: black;
+}
 
 @media screen and (max-width: 500px) {
   .FooterContainer {
     width: 100%;
-    height: 100%;
+    height: 400px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
