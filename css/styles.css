@@ -199,30 +199,30 @@ footer .FooterContainer .row {
   display: flex;
   align-items: center;
 }
-footer .FooterContainer .row .ulFooter {
+footer .FooterContainer .row .boxFooter {
   height: 65%;
   width: 33%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-footer .FooterContainer .row .ulFooter .title {
+footer .FooterContainer .row .boxFooter .title {
   display: flex;
   flex: 3;
 }
-footer .FooterContainer .row .ulFooter .info {
+footer .FooterContainer .row .boxFooter .info {
   display: flex;
   flex: 1;
 }
-footer .FooterContainer .row .ulFooter .bi {
+footer .FooterContainer .row .boxFooter .bi {
   height: 50px;
   font-size: 1.5em;
   color: black;
   margin-top: 20px;
 }
-footer .FooterContainer .row .ulFooter #logoWhatsap {
+footer .FooterContainer .row .boxFooter #logoWhatsap {
   margin-top: 5px;
 }
-footer .FooterContainer .row .ulFooter .igBox {
+footer .FooterContainer .row .boxFooter .igBox {
   height: 40%;
 }/*# sourceMappingURL=styles.css.map */
