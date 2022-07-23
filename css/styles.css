@@ -119,6 +119,41 @@ h1 {
 }
 
 /*suscripciones*/
+.borde {
+  height: 20px;
+  background-color: #e0e0e0;
+}
+
+.boxSuscrip {
+  border: 0px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgSuscrip {
+  max-height: 100%;
+}
+
+.titleSuscrip {
+  margin-bottom: 45px;
+}
+
+.pSuscrip {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.box1 {
+  background-color: gray;
+}
+
+.box2 {
+  background-color: #EDE1DB;
+}
+
 /*eventos*/
 .d-block,
 .w-100 {
