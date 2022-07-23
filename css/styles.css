@@ -176,39 +176,36 @@ h1 {
   font-weight: 700;
 }
 
-.footer {
+.FooterContainer {
   width: 100%;
   height: 500px;
   background-color: #EDE1DB;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-
-.footerBox {
+.FooterContainer .footerBox {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-ul {
+.FooterContainer .footerBox ul {
   height: 45%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.title {
+.FooterContainer .footerBox ul .title {
   display: flex;
   flex: 2;
 }
-
-.info {
+.FooterContainer .footerBox ul .info {
   text-align: center;
   display: flex;
   flex: 1;
 }
-
-.igBox {
+.FooterContainer .footerBox ul .igBox {
   height: 45%;
   display: flex;
   justify-content: center;
