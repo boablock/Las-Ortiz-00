@@ -143,24 +143,24 @@ body {
   .boxSuscrip{
     border: 0px;
     height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(flex,column ,center,center);
+
 
   }
- 
 
   .imgSuscrip{
     max-height: 100%; 
     
    
-    
-    
+  
   }
 
   .titleSuscrip{
-    margin-bottom: 45px;
+    margin-bottom: 30px;
+    font-weight: 700 !important;
+  }
+  #titleSuscrip{
+    font-weight: 700;
   }
   
   .pSuscrip{

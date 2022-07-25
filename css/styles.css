@@ -147,7 +147,12 @@ h1 {
 }
 
 .titleSuscrip {
-  margin-bottom: 45px;
+  margin-bottom: 30px;
+  font-weight: 700 !important;
+}
+
+#titleSuscrip {
+  font-weight: 700;
 }
 
 .pSuscrip {
