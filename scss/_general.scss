@@ -9,15 +9,22 @@ body {
     font-size: 50px;
   }
   
+  /*mixins*/
+
+  @mixin flexbox($dis, $direc, $just, $align) {
+     display: $dis;
+     flex-direction: $direc;
+     justify-content: $just;
+     align-items: $align;
+  }
   
   /***HOME***/
   .HomeSection1 {
     background-image: url(../media/backgroundhome2.jpg);
     background-size: cover;
     height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox (flex, row ,center,center,);
+   
     .boxTransparente {
         background-color: $bgColor1;
         -moz-opacity: 0.75;
@@ -25,14 +32,14 @@ body {
         border-radius: 10px;
         width: 450px;
         height: 250px;
-        display: flex;
-        justify-content: center;
+
         #divHome {
             text-align: center;
-            display: flex;
-            justify-content: start;
-            flex-direction: column;
+            @include flexbox(flex, column ,start ,center);
             margin-top: 40px;
+            .lasOrtizTitle{
+              font-weight: 700;
+            }
             .bi-instagram {
                 font-size: 30px;
                 color: black;
@@ -43,21 +50,22 @@ body {
   
   
   .block1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(flex, column ,center ,center);
     background: $bgColor2;
     height: 500px;
-    .h4Nosotras {
-        padding: 20px;
-        margin-bottom: 20px !important;
-        border: solid black 1px;
+        .titleBlock{
+          margin-bottom: 30px;
+          font-weight: 700;
+        }
         .pBlock {
             text-align: center;
           }
+        .btn-primary{
+          margin-top: 20px;
+        }
       }
-  }
+    
+  
   
   
   .block2 {
@@ -73,19 +81,13 @@ body {
   
   
   /*tienda*/
-  .tiendaSection1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .title {
-        margin: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+ 
+  .title {
+    @include flexbox(flex,column,center, center);
+    margin-top: 20px;
+     
       }
-  }
+  
   
   
   .card {
@@ -113,16 +115,20 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(flex,row ,center ,center);
+   
     .text {
-        width: 30%;
-        height: 40%;
+      @include flexbox(flex,column,center ,center);
+        width: 55%;
+        height: 25%;
         text-align: center;
         background: $bgColor1;
         opacity: 0.8;
         border-radius: 10px;
+        .title_historia{
+          margin-bottom: 20px;
+          font-weight: 700;
+        }
       }
   }
 
