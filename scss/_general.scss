@@ -1,4 +1,7 @@
 
+
+@import "maps";
+
 /*estilos generales*/
 
 body {
@@ -78,16 +81,14 @@ body {
   
   
   .block2 {
-    background-color: map-get($map: $palette, $key: secundary);
+    @extend .block1;
     height: 500px;
     #imgNosotras {
-        -o-object-fit: cover;
-           object-fit: cover;
         max-width: 100%;
         height: 500px;
       }
   }
-  
+
   
   /*tienda*/
  
@@ -154,13 +155,10 @@ body {
     height: 600px;
     @include flexbox(flex,column ,center,center);
 
-
   }
 
   .imgSuscrip{
     max-height: 100%; 
-    
-   
   
   }
 
@@ -168,6 +166,7 @@ body {
     margin-bottom: 30px;
     font-weight: 700 !important;
   }
+
   #titleSuscrip{
     font-weight: 700;
   }
@@ -184,7 +183,6 @@ body {
   .box2{
     background-color: map-get($map: $palette, $key: primary);
   }
-
 
   /*eventos*/
   .d-block,

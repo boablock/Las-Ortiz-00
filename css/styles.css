@@ -1,5 +1,7 @@
 /*ponerlo en orden de concor con el css*/ /*paleta colores, fuentes, medidas*/
-/*se hace a la par del html, al comienzo*/ /*estilos generales*/
+/*se hace a la par del html, al comienzo*/
+/*mixins*/
+/*estilos generales*/
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -47,7 +49,7 @@ h1 {
   transform: scale(0.9);
 }
 
-.block1 {
+.block1, .block2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,28 +57,25 @@ h1 {
   background-color: #fffde7;
   height: 500px;
 }
-.block1 .titleBlock {
+.block1 .titleBlock, .block2 .titleBlock {
   margin-bottom: 30px;
   font-weight: 700;
 }
-.block1 .pBlock {
+.block1 .pBlock, .block2 .pBlock {
   text-align: center;
 }
-.block1 .btn-primary {
+.block1 .btn-primary, .block2 .btn-primary {
   margin-top: 20px;
 }
-.block1 .btn-primary:hover {
+.block1 .btn-primary:hover, .block2 .btn-primary:hover {
   background-color: #b39ddb;
   transform: scale(0.9);
 }
 
 .block2 {
-  background-color: #fffde7;
   height: 500px;
 }
 .block2 #imgNosotras {
-  -o-object-fit: cover;
-  object-fit: cover;
   max-width: 100%;
   height: 500px;
 }
@@ -225,6 +224,7 @@ h1 {
   height: 100px;
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }

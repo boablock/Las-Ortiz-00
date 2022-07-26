@@ -4,11 +4,13 @@
  $font-family:"Raleway", sans-serif;
 
 
- $palette: (
-    primary: #EDE1DB,
-    secundary: #fffde7,
-    hover: #b39ddb
-    );
+  /*mixins*/
 
-
+  @mixin flexbox($dis, $direc, $just, $align) {
+    display: $dis;
+    flex-direction: $direc;
+    justify-content: $just;
+    align-items: $align;
+ }
+ 
  
