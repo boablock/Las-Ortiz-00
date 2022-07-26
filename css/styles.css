@@ -42,13 +42,17 @@ h1 {
   font-size: 30px;
   color: black;
 }
+.HomeSection1 .boxTransparente #divHome .bi-instagram:hover {
+  color: #b39ddb;
+  transform: scale(0.9);
+}
 
 .block1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #fffde7;
+  background-color: #fffde7;
   height: 500px;
 }
 .block1 .titleBlock {
@@ -61,9 +65,13 @@ h1 {
 .block1 .btn-primary {
   margin-top: 20px;
 }
+.block1 .btn-primary:hover {
+  background-color: #b39ddb;
+  transform: scale(0.9);
+}
 
 .block2 {
-  background: #fffde7;
+  background-color: #fffde7;
   height: 500px;
 }
 .block2 #imgNosotras {
@@ -93,7 +101,7 @@ h1 {
   transition: all 0.3s ease-in-out;
 }
 .btn-primary:hover {
-  background: #b39ddb;
+  background-color: #b39ddb;
   transform: scale(0.9);
 }
 
@@ -118,7 +126,7 @@ h1 {
   width: 55%;
   height: 25%;
   text-align: center;
-  background: #EDE1DB;
+  background-color: #EDE1DB;
   opacity: 0.8;
   border-radius: 10px;
 }
@@ -207,14 +215,13 @@ h1 {
   }
 }
 .NavCustom {
-  background: #EDE1DB;
+  background-color: #EDE1DB;
 }
 .NavCustom #logoLO {
   border-radius: 40px !important;
   width: 75px;
 }
 .NavCustom .navbar-nav {
-  background: #EDE1DB;
   height: 100px;
   width: 100%;
   display: flex;
