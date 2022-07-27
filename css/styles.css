@@ -192,11 +192,22 @@ h1 {
 }
 
 .carrusel {
-  width: 80%;
+  width: 100%;
+}
+
+.carousel-inner {
+  max-height: 30em;
+}
+
+.carousel-control-prev-icon {
+  font-size: 10em;
 }
 
 .w-100 {
   width: 100%;
+  height: 600px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /*animaciones, transicion o transformacion*/
