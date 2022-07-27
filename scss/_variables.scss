@@ -1,6 +1,16 @@
  /*paleta colores, fuentes, medidas*/
  /*se hace a la par del html, al comienzo*/
- $bgColor1:#EDE1DB;
- $bgColor2:#fffde7; 
- $hover:#b39ddb; 
+ 
  $font-family:"Raleway", sans-serif;
+
+
+  /*mixins*/
+
+  @mixin flexbox($dis, $direc, $just, $align) {
+    display: $dis;
+    flex-direction: $direc;
+    justify-content: $just;
+    align-items: $align;
+ }
+ 
+ 

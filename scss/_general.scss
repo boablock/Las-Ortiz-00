@@ -1,4 +1,7 @@
 
+
+@import "maps";
+
 /*estilos generales*/
 
 body {
@@ -9,83 +12,92 @@ body {
     font-size: 50px;
   }
   
+  /*mixins*/
+
+  @mixin flexbox($dis, $direc, $just, $align) {
+     display: $dis;
+     flex-direction: $direc;
+     justify-content: $just;
+     align-items: $align;
+  }
   
   /***HOME***/
   .HomeSection1 {
     background-image: url(../media/backgroundhome2.jpg);
     background-size: cover;
     height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox (flex, row ,center,center,);
+   
     .boxTransparente {
-        background-color: $bgColor1;
+        background-color: map-get($map: $palette, $key: primary);
         -moz-opacity: 0.75;
         opacity: 0.75;
         border-radius: 10px;
         width: 450px;
         height: 250px;
-        display: flex;
-        justify-content: center;
+
         #divHome {
             text-align: center;
-            display: flex;
-            justify-content: start;
-            flex-direction: column;
+            @include flexbox(flex, column ,start ,center);
             margin-top: 40px;
+            .lasOrtizTitle{
+              font-weight: 700;
+            }
             .bi-instagram {
                 font-size: 30px;
                 color: black;
+                &:hover {
+                 color: map-get($map: $palette, $key: hover);
+                    transform: scale(0.9);
               }
           }
       }
   }
+}
   
   
   .block1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: $bgColor2;
+    @include flexbox(flex, column ,center ,center);
+    background-color: map-get($map: $palette, $key: secundary);
     height: 500px;
-    .h4Nosotras {
-        padding: 20px;
-        margin-bottom: 20px !important;
-        border: solid black 1px;
+        .titleBlock{
+          margin-bottom: 30px;
+          font-weight: 700;
+        }
         .pBlock {
             text-align: center;
           }
+        .btn-primary{
+          margin-top: 20px;
+          &:hover {
+            background-color: map-get($map: $palette, $key: hover);
+              transform: scale(0.9);
+            }
+
+        }
       }
-  }
+    
+  
   
   
   .block2 {
-    background: $bgColor2;
+    @extend .block1;
     height: 500px;
     #imgNosotras {
-        -o-object-fit: cover;
-           object-fit: cover;
         max-width: 100%;
         height: 500px;
       }
   }
-  
+
   
   /*tienda*/
-  .tiendaSection1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .title {
-        margin: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+ 
+  .title {
+    @include flexbox(flex,column,center, center);
+    margin-top: 20px;
+     
       }
-  }
+  
   
   
   .card {
@@ -93,12 +105,12 @@ body {
   }
 
     .btn-primary {
-        background-color: $bgColor1;
+      background-color: map-get($map: $palette, $key: primary);
         color: black;
         border-style: none;
         transition: all 0.3s ease-in-out;
         &:hover {
-            background: $hover;
+          background-color: map-get($map: $palette, $key: hover);
             transform: scale(0.9);
           }
       }
@@ -113,21 +125,65 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(flex,row ,center ,center);
+   
     .text {
-        width: 30%;
-        height: 40%;
+      @include flexbox(flex,column,center ,center);
+        width: 55%;
+        height: 25%;
         text-align: center;
-        background: $bgColor1;
+        background-color: map-get($map: $palette, $key: primary);
         opacity: 0.8;
         border-radius: 10px;
+        .title_historia{
+          margin-bottom: 20px;
+          font-weight: 700;
+        }
       }
   }
 
   
   /*suscripciones*/
+
+  .borde{
+    height: 20px;
+    background-color: #e0e0e0;
+  }
+
+  .boxSuscrip{
+    border: 0px;
+    height: 600px;
+    @include flexbox(flex,column ,center,center);
+
+  }
+
+  .imgSuscrip{
+    max-height: 100%; 
+  
+  }
+
+  .titleSuscrip{
+    margin-bottom: 30px;
+    font-weight: 700 !important;
+  }
+
+  #titleSuscrip{
+    font-weight: 700;
+  }
+  
+  .pSuscrip{
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .box1{
+    background-color: gray;
+  }
+
+  .box2{
+    background-color: map-get($map: $palette, $key: primary);
+  }
+
   /*eventos*/
   .d-block,
   .w-100 {
