@@ -15,7 +15,7 @@ h1 {
 .HomeSection1 {
   background-image: url(../media/backgroundhome2.jpg);
   background-size: cover;
-  height: 500px;
+  height: 800px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -76,8 +76,9 @@ h1 {
   height: 500px;
 }
 .block2 #imgNosotras {
-  max-width: 100%;
+  width: 660px;
   height: 500px;
+  margin-left: 20px;
 }
 
 /*tienda*/
@@ -135,9 +136,16 @@ h1 {
 }
 
 /*suscripciones*/
-.borde {
-  height: 20px;
-  background-color: #e0e0e0;
+.hrBoxSuscrip {
+  background-color: #EDE1DB;
+  height: 1px;
+  width: 40%;
+}
+
+.hrRey {
+  background-color: #EDE1DB;
+  height: 1px;
+  width: 70%;
 }
 
 .boxSuscrip {
@@ -154,11 +162,17 @@ h1 {
 }
 
 .titleSuscrip {
-  margin-bottom: 30px;
+  margin: 0px;
   font-weight: 700 !important;
 }
 
-#titleSuscrip {
+.formBox {
+  border: solid #EDE1DB 2px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+label {
   font-weight: 700;
 }
 
@@ -168,10 +182,6 @@ h1 {
 }
 
 .box1 {
-  background-color: gray;
-}
-
-.box2 {
   background-color: #EDE1DB;
 }
 
