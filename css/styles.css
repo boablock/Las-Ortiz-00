@@ -182,7 +182,8 @@ label {
 }
 
 .box1 {
-  background-color: #EDE1DB;
+  background-image: url(../media/suscri1.jpg);
+  background-size: cover;
 }
 
 /*eventos*/
