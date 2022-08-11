@@ -86,8 +86,12 @@ h1 {
   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
 
+.imgTienda {
+  height: 100%;
+  width: 300px;
+}
+
 .sectionCards {
-  background-color: #ecfaff;
   padding: 30px;
   height: 400px;
   font-family: "Nunito", sans-serif;
@@ -96,7 +100,6 @@ h1 {
 }
 
 .card {
-  background-image: url(../media/ramo1.webp);
   flex: 300px;
   margin: 20px;
   border-radius: 10px;
@@ -106,7 +109,7 @@ h1 {
   transition: 0.5s ease;
 }
 .card:hover {
-  border-color: #008bf8;
+  border-color: black;
 }
 .card:hover .card--hover {
   opacity: 1;
@@ -116,7 +119,6 @@ h1 {
   opacity: 1;
 }
 .card--hover {
-  padding: 40px 0;
   text-align: center;
   opacity: 0.6;
   transition: 0.25s ease;
@@ -132,7 +134,7 @@ h1 {
 .card--hover a {
   transform: translate(-50%, 125%);
   border-radius: 20px;
-  background-color: #008bf8;
+  background-color: #b39ddb;
   color: #fff;
   padding: 8px 16px;
   display: inline-block;
@@ -148,6 +150,8 @@ h1 {
   border-color: #1a1a1a;
 }
 .card.card--dark .card--hover {
+  height: 100%;
+  width: 100%;
   color: #fff;
 }
 .card.card--dark a {

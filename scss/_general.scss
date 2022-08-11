@@ -94,6 +94,8 @@ body {
   /*tienda*/
 
 
+
+
   @mixin transform($property) {
     -webkit-transform: $property;
         -ms-transform: $property;
@@ -110,9 +112,12 @@ body {
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
   }
   
+  .imgTienda{
+    height: 100%;
+    width: 300px
+}
   
   .sectionCards {
-    background-color: #ecfaff;
     padding: 30px;
     height: 400px;
     font-family: 'Nunito', sans-serif;
@@ -121,8 +126,6 @@ body {
     -webkit-flex-flow: row wrap;
   }
   .card {
-    background-image: url(../media/ramo1.webp);
-    
     @include flex(300px);
     margin: 20px;
     border-radius: 10px;
@@ -132,7 +135,7 @@ body {
     transition: 0.5s ease;
     &:hover {
       @extend %shadow;
-      border-color: #008bf8;
+      border-color:black;
       .card--hover {
         opacity: 1;
         a {
@@ -143,15 +146,15 @@ body {
       }
     }
     &--hover {
-      padding: 40px 0;
+      
       text-align: center;
       opacity: 0.6;
       transition: 0.25s ease;
-      h3 {
-        font-size: 30px;
-        font-weight: bold;
-        margin: 0;
-      }
+        h3 {
+          font-size: 30px;
+          font-weight: bold;
+          margin: 0;
+        }
       p {
         margin: 10px 0 0;
       }
@@ -159,7 +162,7 @@ body {
       a {
         @include transform(translate(-50%, 125%));
         border-radius: 20px;
-        background-color: #008bf8;
+        background-color: #b39ddb;
         color: #fff;
         padding: 8px 16px;
         display: inline-block;
@@ -175,6 +178,8 @@ body {
       background-color: #1a1a1a;
       border-color: #1a1a1a;
       .card--hover {
+        height: 100%;
+        width: 100%;
         color: #fff;
       }
       a {
@@ -191,10 +196,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .prodDestacados{
-
   }
  
 
