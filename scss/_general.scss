@@ -6,8 +6,13 @@
 
 body {
     font-family: $font-family;
+ 
   }
   
+  .parrallax{
+    background: fixed;
+  }
+
   h1 {
     font-size: 50px;
   }
@@ -22,7 +27,9 @@ body {
   }
   
   /***HOME***/
+
   .HomeSection1 {
+    
     background-image: url(../media/backgroundhome2.jpg);
     background-size: cover;
     height: 800px;
@@ -54,8 +61,7 @@ body {
       }
   }
 }
-  
-  
+
   .block1 {
     @include flexbox(flex, column ,center ,center);
     background-color: map-get($map: $palette, $key: secundary);
@@ -77,14 +83,11 @@ body {
         }
       }
     
-  
-  
-  
   .block2 {
     @extend .block1;
     height: 500px;
     #imgNosotras {
-        width: 660px;
+        width: 100%;
         height: 500px;
         margin-left: 20px;
     }
@@ -92,6 +95,101 @@ body {
 
   
   /*tienda*/
+
+  @mixin transform($property) {
+    -webkit-transform: $property;
+        -ms-transform: $property;
+            transform: $property;
+  }
+  
+  @mixin flex($property) {
+    -webkit-box-flex: $property;
+            -ms-flex: $property;
+                flex: $property;
+  }
+  
+  %shadow {
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  }
+  
+  .imgTienda{
+    width: 100%;
+    height: 297px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+  
+  .sectionCards {
+    padding: 30px;
+    height: 400px;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-flow: row wrap;
+  }
+  .card {
+    @include flex(300px);
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid #c3c6ce;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s ease;
+    &:hover {
+      @extend %shadow;
+      border-color:black;
+      .card--hover {
+        opacity: 1;
+        a {
+          @extend %shadow;
+          @include transform(translate(-50%, 50%));
+          opacity: 1;
+        }
+      }
+    }
+    &--hover {
+      
+      text-align: center;
+      opacity: 0.6;
+      transition: 0.25s ease;
+        h3 {
+          font-size: 30px;
+          font-weight: bold;
+          margin: 0;
+        }
+      p {
+        margin: 10px 0 0;
+      }
+  
+      a {
+        @include transform(translate(-50%, 125%));
+        border-radius: 20px;
+        background-color: #b39ddb;
+        color: #fff;
+        padding: 8px 16px;
+        display: inline-block;
+        text-decoration: none;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        opacity: 0;
+        transition: 0.25s ease;
+      }
+    }
+    &.card--dark {
+      background-color: #1a1a1a;
+      border-color: #1a1a1a;
+      .card--hover {
+        height: 100%;
+        width: 100%;
+        color: #fff;
+      }
+      a {
+        background-color: #7FEFBD;
+        color: #1a1a1a;
+      }
+    }
+  }
 
   .titleTienda{
     margin-top: 20px;
@@ -101,7 +199,11 @@ body {
     justify-content: center;
     align-items: center;
   }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> entrega-final
   .card {
     margin: 20px;
   }
@@ -117,18 +219,18 @@ body {
           }
       }
   
-  
-  
   /*nosotras*/
+
   .NosotrasSection1 {
+    background: fixed; 
     width: 100%;
-    height: 150vh;
+    height: 1000px;
     background: url(../media/nosotras.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     @include flexbox(flex,row ,center ,center);
-   
+
     .text {
       @include flexbox(flex,column,center ,center);
         width: 55%;
@@ -143,10 +245,13 @@ body {
       }
   }
 
-  
   /*suscripciones*/
 
- 
+
+.boxImgSuscri{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
   .hrBoxSuscrip{
     background-color: #EDE1DB;
     height: 1px;
@@ -169,8 +274,13 @@ body {
   }
 
   .imgSuscrip{
+    // height: auto;
+    // width: 100%;
     max-height: 100%; 
-  
+    background-size: cover;
+    border-radius: 10px;
+    filter: brightness(95%);
+ 
   }
 
   .titleSuscrip{
@@ -193,6 +303,7 @@ body {
     text-align: center;
   }
 
+<<<<<<< HEAD
   .box1{
    background-image: url(../media/suscri1.jpg);
    background-size: cover;
@@ -204,6 +315,8 @@ body {
   }
  
 
+=======
+>>>>>>> entrega-final
   /*eventos*/
   .titleEventos{
     text-align: center;
@@ -213,12 +326,14 @@ body {
 
   .titleH2{
    margin-bottom: 20px;
+   
   }
 
   .carrucelContainer{
     display: flex;
     justify-content: center;
-    
+    margin-bottom: 40px;
+   
   }
   .carrusel{
     width: 100%;
@@ -227,6 +342,7 @@ body {
 
   .carousel-inner{
     max-height: 30em;
+    
   }
 
   .carousel-control-prev-icon{
@@ -236,9 +352,17 @@ body {
   .w-100 {
    width: 100%;
    height: 600px;
-   object-fit: contain;
+   object-fit:contain;
+   border-radius: 10px;
+
   }
-  
+
+  .carousel-item{
+    background-position: 50% 50%;
+  }
+
+
+
  
 
   
