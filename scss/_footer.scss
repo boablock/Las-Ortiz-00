@@ -37,13 +37,25 @@
                 font-size: 1.5em;
                 text-align: center;
                 color: black;
+                transition: transform .2s;
+            }
+            .bi:hover{
+                transform: scale(1.2);
             }
             
         }
     }
 }
 
-
+.bi{
+    font-size: 1.5em;
+    text-align: center;
+    color: black;
+    transition: transform .2s;
+}
+.bi:hover{
+    transform: scale(1.2);
+}
 
 
 

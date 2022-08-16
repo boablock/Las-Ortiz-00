@@ -6,6 +6,10 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+.parrallax {
+  background: fixed;
+}
+
 h1 {
   font-size: 50px;
 }
@@ -76,7 +80,7 @@ h1 {
   height: 500px;
 }
 .block2 #imgNosotras {
-  width: 660px;
+  width: 100%;
   height: 500px;
   margin-left: 20px;
 }
@@ -188,8 +192,9 @@ h1 {
 
 /*nosotras*/
 .NosotrasSection1 {
+  background: fixed;
   width: 100%;
-  height: 150vh;
+  height: 1000px;
   background: url(../media/nosotras.jpg);
   background-size: cover;
   background-position: center;
@@ -216,6 +221,11 @@ h1 {
 }
 
 /*suscripciones*/
+.boxImgSuscri {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .hrBoxSuscrip {
   background-color: #EDE1DB;
   height: 1px;
@@ -239,6 +249,9 @@ h1 {
 
 .imgSuscrip {
   max-height: 100%;
+  background-size: cover;
+  border-radius: 10px;
+  filter: brightness(95%);
 }
 
 .titleSuscrip {
@@ -261,10 +274,6 @@ label {
   text-align: center;
 }
 
-.box1 {
-  background-color: #EDE1DB;
-}
-
 /*eventos*/
 .titleEventos {
   text-align: center;
@@ -279,6 +288,7 @@ label {
 .carrucelContainer {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 .carrusel {
@@ -298,6 +308,11 @@ label {
   height: 600px;
   -o-object-fit: contain;
      object-fit: contain;
+  border-radius: 10px;
+}
+
+.carousel-item {
+  background-position: 50% 50%;
 }
 
 /*animaciones, transicion o transformacion*/
@@ -392,6 +407,21 @@ h1 {
   font-size: 1.5em;
   text-align: center;
   color: black;
+  transition: transform 0.2s;
+}
+.FooterContainer .footerBox ul .bi:hover {
+  transform: scale(1.2);
+}
+
+.bi {
+  font-size: 1.5em;
+  text-align: center;
+  color: black;
+  transition: transform 0.2s;
+}
+
+.bi:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 480px) {
